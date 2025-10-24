@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+	<!-- INVALID: no @Rating, wrong Address order, Phones element, missing NearestAirport -->
+	<Hotel Number="999">
+		<Name>Broken Hotel A</Name>
+		<Address>
+			<Street>1 Bad Order Way</Street>
+			<City>Nowhere</City>
+			<Zip>12345</Zip>
+			<!-- should come after State per XSD sequence -->
+			<State>ZZ</State>
+		</Address>
+		<Phones>000-000-0000</Phones>
+		<!-- element name should be Phone -->
+		<!-- NearestAirport missing on purpose -->
+	</Hotel>
+
+	<!-- INVALID: has Rating but bad child order -->
+	<Hotel Rating="4.2" Number="1001">
+		<Address>
+			<Street>2 Bad Sequence Blvd</Street>
+			<City>Somewhere</City>
+			<State>AA</State>
+			<Zip>54321</Zip>
+		</Address>
+		<Name>Broken Hotel B</Name>
+		<!-- Missing Phone and NearestAirport -->
+	</Hotel>
+
+</Hotels>
