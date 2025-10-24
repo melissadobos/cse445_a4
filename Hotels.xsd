@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Root: <Hotels> contains 1..* <Hotel> -->
+	<xsd:element name="Hotels">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Hotel" minOccurs="1" maxOccurs="unbounded">
+					<xsd:complexType>
+						<!-- ORDER: Name -> Phone+ -> Address -->
+						<xsd:sequence>
+							<xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+							<xsd:element name="Address">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Number" type="xsd:int"/>
+										<xsd:element name="Street" type="xsd:string"/>
+										<xsd:element name="City"   type="xsd:string"/>
+										<xsd:element name="State"  type="xsd:string"/>
+										<xsd:element name="Zip"    type="xsd:int"/>
+									</xsd:sequence>
+									<!-- NearestAirport is an OPTIONAL ATTRIBUTE on Address -->
+									<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+
+						<!-- Hotel attributes -->
+						<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

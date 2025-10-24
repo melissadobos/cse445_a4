@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Hotels.xsl"?>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+	<!-- SAMPLE FROM ASSIGNMENT -->
+	<Hotel Rating="4.0">
+		<Name>Sample Hotel</Name>
+		<Phone>480-555-0000</Phone>
+		<Address NearestAirport="PHX">
+			<Number>123</Number>
+			<Street>Example St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 1 -->
+	<Hotel Rating="4.8">
+		<Name>Four Seasons Resort Hualalai</Name>
+		<Phone>808-325-8000</Phone>
+		<Phone>808-325-8080</Phone>
+		<Address NearestAirport="KOA">
+			<Number>72</Number>
+			<Street>Ka'upulehu Dr</Street>
+			<City>Kailua-Kona</City>
+			<State>HI</State>
+			<Zip>96740</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 2 -->
+	<Hotel Rating="4.7">
+		<Name>Acqualina Resort &amp; Residences On The Beach</Name>
+		<Phone>305-918-8000</Phone>
+		<Address NearestAirport="MIA">
+			<Number>17875</Number>
+			<Street>Collins Ave</Street>
+			<City>Sunny Isles Beach</City>
+			<State>FL</State>
+			<Zip>33160</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 3 -->
+	<Hotel Rating="4.6">
+		<Name>Kona Village, A Rosewood Resort</Name>
+		<Phone>808-731-1200</Phone>
+		<Address NearestAirport="KOA">
+			<Number>72</Number>
+			<Street>Maheawalu Dr</Street>
+			<City>Kailua-Kona</City>
+			<State>HI</State>
+			<Zip>96740</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 4 -->
+	<Hotel Rating="4.6">
+		<Name>The Ritz-Carlton New York, NoMad</Name>
+		<Phone>212-404-8400</Phone>
+		<Phone>212-404-8401</Phone>
+		<Address NearestAirport="JFK">
+			<Number>25</Number>
+			<Street>W 28th St</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>10001</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 5 -->
+	<Hotel Rating="4.7">
+		<Name>The Little Nell</Name>
+		<Phone>(970) 920-4600</Phone>
+		<Address NearestAirport="ASE">
+			<Number>675</Number>
+			<Street>E Durant Ave</Street>
+			<City>Aspen</City>
+			<State>CO</State>
+			<Zip>81611</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 6 -->
+	<Hotel Rating="4.6">
+		<Name>The Beverly Hills Hotel</Name>
+		<Phone>(310) 276-2251</Phone>
+		<Address NearestAirport="LAX">
+			<Number>9641</Number>
+			<Street>Sunset Blvd</Street>
+			<City>Beverly Hills</City>
+			<State>CA</State>
+			<Zip>90210</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 7 -->
+	<Hotel Rating="4.4">
+		<Name>Raffles Boston</Name>
+		<Phone>(617) 351-8888</Phone>
+		<Phone>617-351-8800</Phone>
+		<Address NearestAirport="BOS">
+			<Number>40</Number>
+			<Street>Trinity Pl</Street>
+			<City>Boston</City>
+			<State>MA</State>
+			<Zip>02116</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 8 -->
+	<Hotel Rating="4.8">
+		<Name>Four Seasons Resort Lanai</Name>
+		<Phone>808-565-2000</Phone>
+		<Address NearestAirport="LNY">
+			<Number>1</Number>
+			<Street>Manele Bay Rd</Street>
+			<City>Lanai City</City>
+			<State>HI</State>
+			<Zip>96763</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 9 -->
+	<Hotel Rating="4.8">
+		<Name>Rancho Valencia Resort &amp; Spa</Name>
+		<Phone>858-756-1123</Phone>
+		<Address NearestAirport="SAN">
+			<Number>5921</Number>
+			<Street>Valencia Cir</Street>
+			<City>Rancho Santa Fe</City>
+			<State>CA</State>
+			<Zip>92067</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- 10 -->
+	<Hotel Rating="4.7">
+		<Name>The Peninsula Chicago</Name>
+		<Phone>312-337-2888</Phone>
+		<Phone>312-573-6860</Phone>
+		<Address NearestAirport="ORD">
+			<Number>108</Number>
+			<Street>E Superior St</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60611</Zip>
+		</Address>
+	</Hotel>
+
+</Hotels>
